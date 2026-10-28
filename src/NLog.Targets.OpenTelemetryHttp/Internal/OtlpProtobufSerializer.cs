@@ -54,7 +54,7 @@ namespace NLog.Internal
         private static readonly long UnixEpochTicks = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc).Ticks;
         private const int MaxStringLength = 64 * 1024;
         private const int MaxCollectionItems = 10000;
-        private const int MaxRecursionDepth = 2;
+        private const int MaxRecursionDepth = 10;
 
         /// <summary>Gets or sets the layout for capturing the W3C TraceId for each LogRecord (Hexadecimal String: 32 chars).</summary>
         public Layout<System.Diagnostics.ActivityTraceId?>? TraceId { get; set; }
